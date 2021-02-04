@@ -1,0 +1,46 @@
+\documentclass[aspectratio=44]{beamer}
+\usepackage[spanish]{babel}
+\input{chapters/preamble}
+\title{Estadística I} %->->->->-> Check hyperref title <-<-<-<-<-
+\subtitle{Notas de clase}
+\author[rmalvaradom]{Rogelio Alvarado}
+\institute[POLI]{
+    Ciencias Básicas%
+    \\%
+    Politécnico Grancolombiano%
+} %You can change the Institution if you are from somewhere else
+\date{Febrero, 2021}
+%\logo{\includegraphics[width= 0.2\textwidth]{images/a-logo.png}}
+
+\begin{document}
+    
+    \frame{\titlepage}
+    
+    \begin{frame}{Contenido}
+        \tableofcontents
+    \end{frame}
+    
+    \input{chapters/a-silly-idea.tex} %You can put the frames directly into the presentation, but using the input command and writing them in separate .tex files might be more organized
+    
+    \input{chapters/playing-around.tex}
+    
+    \input{chapters/fourier-playground.tex}
+    
+    \section*{Acknowledgments} %You can remove this if you do not want to use it
+        \begin{frame}{Acknowledgments}
+            The author is extremely thankful to Prof. Antônio F. R. T. Piza for the short, yet wonderful, conversations about this seminar.
+        \end{frame}
+    
+    \section*{References} %You can remove this if you do not want to use it
+        \nocite{Djairo} \nocite{PhilPanof} \nocite{Fleming} \nocite{Shankar}
+        \begin{frame}{Referencia}
+            \printbibliography
+        \end{frame}
+
+    \section{}
+    \begin{frame}{}
+        \centering
+            \Huge\bfseries
+        \textcolor{yellow}{The End}
+    \end{frame}
+\end{document}
